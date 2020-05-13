@@ -1,0 +1,19 @@
+server:
+  # 指定端口号
+  port: 8888
+  servlet:
+    context-path: /config
+---
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://git.coding.net/wangpp/fileManage.git
+            search-paths: API
+            username: 18170146395@163.com
+            password: XXXXXXXX
+          # 指定目录
+          search-paths: API

@@ -1,0 +1,13 @@
+spring:
+  application:
+    # 名称
+    name: spring-cloud-netflix-eureka
+  profiles:
+    # 开发环境
+    active: dev
+  cloud:
+    config:
+      # spring-cloud-config-server链接
+      uri: http://localhost:8888/config/
+      # git分支
+      label: master
